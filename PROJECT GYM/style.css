@@ -1,0 +1,249 @@
+/* Reset default margin, padding, and box-sizing for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set font family and hide horizontal overflow for the HTML element */
+html {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+/* Set font family and hide horizontal overflow for the body element */
+body {
+  font-family: "poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+/* Define custom colors using CSS variables */
+:root {
+  --main-color: #f8b281;
+  --secondary-color: #1b1b1b;
+}
+
+/* Define a custom font-face for a specific font file */
+@font-face {
+  font-family: "argonite";
+  src: url("./assets/stone\ orgonite.woff");
+}
+
+/* Apply padding to all sections in the document */
+section {
+  padding: 5%;
+}
+
+/* Style for h2 heading elements */
+h2 {
+  font-size: 2.5rem;
+  line-height: 125%;
+  padding: 1rem 0rem;
+}
+
+/* Style for h3 heading elements */
+h3 {
+  font-size: 1.25rem;
+  line-height: 125%;
+}
+
+/* Style for navigation section */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Style for navigation SVG icon */
+nav svg {
+  cursor: pointer;
+  z-index: 10;
+}
+
+/* Style for links dropdown menu */
+.links {
+  position: absolute;
+  background: white;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transform: translateX(100%);
+}
+
+/* Style for links in the dropdown menu */
+.links a {
+  color: var(--secondary-color);
+  font-size: 2rem;
+}
+
+/* Style for logo section */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+/* Style for logo h1 element */
+.logo h1 {
+  margin-left: 0.5rem;
+  font-size: 1rem;
+  font-family: "argonite", sans-serif;
+}
+
+/* Style for logo image */
+.logo img {
+  width: 1.5rem;
+}
+
+/* Style for front page section */
+.front-page {
+  min-height: 100vh;
+  color: white;
+}
+
+/* Style for selling point section */
+.selling-point {
+  margin-top: 25vh;
+  font-family: "argonite", sans-serif;
+  text-shadow: 0px 4px 12px rgba(0, 0, 0, 0.49);
+  text-align: center;
+}
+
+/* Style for selling point h3 element */
+.selling-point h3 {
+  font-family: sans-serif;
+  text-shadow: 0px 4px 12px rgba(0, 0, 0, 0.49);
+}
+
+/* Style for call to action (CTA) buttons */
+.ctas {
+  margin-top: 2rem;
+}
+
+/* Style for main CTA button */
+.ctas button {
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.216);
+  margin: 1rem;
+}
+
+/* Style for main CTA button with background color and text color */
+.cta-main {
+  background-color: var(--main-color);
+  color: var(--secondary-color);
+}
+
+/* Style for link within main CTA button */
+.cta-main a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+/* Style for secondary CTA button */
+.cta-sec {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+/* Style for hero image */
+.hero {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Style for classes section */
+.classes {
+  color: var(--secondary-color);
+  text-align: center;
+  font-family: "argonite", sans-serif;
+}
+
+/* Style for video elements within the videos class */
+.videos video {
+  width: 100%;
+  border-radius: 1rem;
+  margin-top: 1rem;
+}
+
+/* Styles for specific class videos */
+.meditation,
+.yoga,
+.pilates {
+  position: relative;
+}
+
+/* Style for h3 elements within videos class */
+.videos h3 {
+  position: absolute;
+  color: var(--main-color);
+  text-shadow: 0px 2px 12px rgba(0, 0, 0, 0.408);
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  font-size: 2rem;
+}
+
+/* Style for about section */
+.about {
+  color: var(--secondary-color);
+}
+
+/* Style for h2 elements within about class */
+.about h2 {
+  font-family: "argonite", sans-serif;
+  text-align: center;
+}
+
+/* Style for p elements within about class */
+.about p {
+  line-height: 150%;
+  font-size: 1.2rem;
+}
+
+/* Style for image elements within about class */
+.about img {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+/* Responsive styles for screens with a minimum width of 768px */
+@media screen and (min-width: 768px) {
+  body {
+    padding: 0% 10%;
+  }
+
+  /* Flex layout for videos class with a gap between elements */
+  .videos {
+    display: flex;
+    gap: 2rem;
+  }
+
+  /* Flex layout for about class with a gap between elements and justification */
+  .about {
+    display: flex;
+    gap: 5rem;
+    justify-content: space-between;
+  }
+
+  /* Adjust width of about image for larger screens */
+  .about img {
+    width: 50%;
+  }
+
+  /* Align h2 text to the start for larger screens */
+  .about h2 {
+    text-align: start;
+  }
+}

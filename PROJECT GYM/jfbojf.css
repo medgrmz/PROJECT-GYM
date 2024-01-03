@@ -1,0 +1,80 @@
+body {
+    background-image: url("assets/hero.png"); /* Set background image */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: Arial, sans-serif; /* Set default font family */
+    height: 100vh; /* Set full viewport height */
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay */
+    color: #fff;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+img {
+    width: auto;
+    height: auto;
+    margin-bottom: 0px;
+}
+
+form {
+    margin: 0 auto;
+    width: 500px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay for form */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+margin-bottom: 50px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #8d8b8b;
+}
+
+input, select {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+}
+
+input[type="date"] {
+    background-color: #eee; /* Background color for date input */
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+button {
+    background-color: #f8b281; /* Set button's background color */
+    color: #333; /* Adjust text color if needed */
+    border: none; /* Remove default border */
+    padding: 15px 30px; /* Adjust padding for desired size */
+    border-radius: 5px; /* Add rounded corners */
+    font-weight: bold; /* Make text bolder */
+    text-align: center; /* Center text within button */
+    cursor: pointer; /* Indicate clickability */
+    display: block; /* Make the button take up the full width */
+    margin: 0 auto; /* Center it horizontally */
+}
+#summary {
+    color: #ddd;
+}
